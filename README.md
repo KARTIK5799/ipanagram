@@ -5,7 +5,7 @@ This is a React application named ipanagram.
 
 ## Description
 
-ipanagram is a simple React application for managing timezones and selecting time slots for different days of the week.
+ipanagram is a simple React application for managing and selecting time slots for different days of the week.
 
 ## Installation
 
