@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.list-of-days {
+    overflow-y: auto;
+    margin-top: 160px; 
+  }
+  

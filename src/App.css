@@ -1,0 +1,9 @@
+.option-style {
+    background-color: #fff;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.option-style:hover {
+    background-color: #f0f0f0;
+}
