@@ -7,8 +7,8 @@ const Dropdown = () => {
   );
   const [optionVisible, setOptionVisible] = useState(false);
 
-  const handleDropdownChange = (event) => {
-    setSelectedOption(event.target.value);
+  const handleDropdownChange = (zone) => {
+    setSelectedOption(`${zone.offset} - ${zone.location}`);
     setOptionVisible(false);
   };
 
@@ -32,16 +32,11 @@ const Dropdown = () => {
           </span>
         </div>
         {optionVisible && (
-          <ul
-            className="dropdown-options bg-white w-full border h-96 overflow-y-scroll px-20 py-5 shadow-lg"
-            onChange={handleDropdownChange}
-          >
+          <ul className="dropdown-options bg-white w-full border h-96 overflow-y-scroll px-20 py-5 shadow-lg">
             {timeZones.map((zone, index) => (
               <li
                 key={index}
-                onClick={() =>
-                  setSelectedOption(`${zone.offset} - ${zone.location}`)
-                }
+                onClick={() => handleDropdownChange(zone)}
                 className="cursor-pointer py-3 border-b-2"
               >
                 {zone.offset} - {zone.location}

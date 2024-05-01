@@ -100,7 +100,7 @@ const ListOfDays = ({ selectedDate }) => {
           }),
         },
       ]);
-      setIdCounter((prevIdCounter) => prevIdCounter + 1);
+      setIdCounter(Math.floor(Math.random()*900)+100);
       setNameCounter((prevNameCounter) => prevNameCounter + 1);
     } else {
       setSelectedTimeSpans((prevState) =>
